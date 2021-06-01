@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome customer"
+        android:textSize="24sp"
+        android:textColor="@color/purple_200"
+        android:layout_margin="16dp"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customerName"
+        android:hint="enter your name here"
+        android:layout_margin="16dp"/>
+
+
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton android:id="@+id/hindi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hindi"
+            android:onClick="onRadioButtonClicked"
+            />
+        <RadioButton android:id="@+id/english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:onClick="onRadioButtonClicked"
+            />
+        <RadioButton android:id="@+id/marathi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marathi"
+            android:onClick="onRadioButtonClicked"
+            />
+        <RadioButton android:id="@+id/bengali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bengali"
+            android:onClick="onRadioButtonClicked"
+            />
+        <RadioButton android:id="@+id/odiya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odiya"
+            android:onClick="onRadioButtonClicked"
+            />
+        <RadioButton android:id="@+id/tamil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamil"
+            android:onClick="onRadioButtonClicked"
+            />
+    </RadioGroup>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place order"
+        android:onClick="placeOrder"
+        android:layout_margin="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:onClick="sendNow"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="receive"
+            android:onClick="receiveNow"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="transmit"
+            android:onClick="transmitNow"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

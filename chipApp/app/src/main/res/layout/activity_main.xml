@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/customChipstyle"
+            app:checkedIconVisible="false"
+            app:closeIconVisible="false"
+            app:chipIcon="@drawable/round_shape1"
+            android:onClick="chiplist"
+            android:text="Light theme 1"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/customChipstyle"
+            app:checkedIconVisible="false"
+            app:closeIconVisible="false"
+            app:chipIcon="@drawable/round_shape2"
+            android:onClick="chiplist"
+            android:text="Light theme 2"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/customChipstyle"
+            app:checkedIconVisible="false"
+            app:closeIconVisible="false"
+            app:chipIcon="@drawable/round_shape3"
+            android:onClick="chiplist"
+            android:text="Light theme 3"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

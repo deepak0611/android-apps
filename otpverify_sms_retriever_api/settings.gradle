@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "otpverify_sms_retriever_api"

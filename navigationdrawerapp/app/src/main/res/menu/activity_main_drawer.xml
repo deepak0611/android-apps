@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_favourite"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="Favourite Niti" />
+
+        <item
+            android:id="@+id/nav_nitiOfTheDay"
+            android:icon="@drawable/ic_baseline_format_quote_24"
+            android:title="Niti of the Day" />
+
+        <item
+            android:id="@+id/nav_Rating"
+            android:icon="@drawable/ic_baseline_star_rate_24"
+            android:title="Rate this app" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="Share this app" />
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+
+    </group>
+
+
+
+</menu>
